@@ -1,0 +1,156 @@
+/* Estilização da Foto */
+.foto-perfil {
+    display: block;        /* Transforma em bloco para podermos centralizar */
+    width: 200px;           /* Garante que ela seja responsiva */
+    height: 200px;          /* Mantém a proporção original, sem distorcer */
+    border: 3px solid #3498db; /* Cria uma borda charmosa com a cor do seu menu */
+    border-radius: 50%;    /* Deixa a foto redonda */
+    margin: 30px auto;     /* Centraliza a foto e adiciona um espaço em cima e embaixo */
+    object-fit: cover;     /* Garante que a foto preencha o círculo sem distorcer */
+}
+
+/* Configurações Gerais */
+
+hr {
+    margin: 20px 20px;
+    color: #0a98c4;
+    border: 3px solid #0a98c4;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px; /* Espaço para o menu fixo não cobrir o conteúdo */
+}
+
+/* Menu Fixo no Topo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #edf2f7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #3498db; /* Cor de destaque ao passar o mouse ou link ativo */
+}
+
+/* Conteúdo das Páginas */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para o Formulário de Contato */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para a Caixa de Feedback do JavaScript */
+.feedback-box {
+    display: none; /* Escondida por padrão */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.feedback-box.show {
+    display: block; /* Aparece quando o formulário é enviado */
+}
+
+/* Estilo em caso de erro */
+.feedback-box.error {
+    background-color: #fde8e8;
+    color: #e74c3c;
+    border: 1px solid #f8b4b4;
+}
+
+/* Estilo em caso de sucesso */
+.feedback-box.success {
+    background-color: #edf7ed;
+    color: #27ae60;
+    border: 1px solid #c3e6cb;
+}
